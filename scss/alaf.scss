@@ -1,0 +1,96 @@
+@mixin vign {
+    background-color: #ffff;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+
+.header
+{
+    &__img
+    {
+        background-color: #ffff;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        & img
+        {
+            width: 5%;
+        }
+    }
+}
+
+.title
+{
+    &__heart
+    {
+
+        & i
+        {
+            width: 20%;
+        }
+    }
+}
+
+.enter
+{
+    &__vign
+    {
+        @include vign;
+    }
+}
+
+.plats
+{
+    &__vign
+    {
+        @include vign;
+    }
+}
+
+.desserts
+{
+    &__vign
+    {
+        @include vign;
+    }
+}
+
+.footer
+{
+    background-color: #353535;
+    color: #ffff;
+    padding: 10px;
+    line-height: 1.3em;
+    & a
+    {
+        text-decoration: none;
+        color: #ffff;
+    }
+    &__h
+    {
+        font-size: .8em;
+        font-weight: lighter;
+        font-family: "Shrikhand";
+        margin-left: 10px;
+    }
+    &__text
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px 10px 10px;
+        & i
+        {
+            width: 5%;
+        }
+    }
+    & p
+    {
+        margin-left: 10px;    
+    }
+    & a
+    {
+        margin-left: 10px;
+    }
+}
