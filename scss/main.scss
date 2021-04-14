@@ -1,11 +1,11 @@
-$primary:#9356dc;
-$secondary: #ff79da;
-$tertiary: #99e2d0;
 * {padding: 0; margin: 0;}
+
+@import ".layouts/footer";
+@import ".utils/variables";
+
 body
 {
     font-family: "Roboto", sans-serif;
-    background-color: aqua;
 }
 
 
@@ -80,11 +80,10 @@ body
         align-items: center;
         color: white;
         background-color: #f6f6f6;
-        transform: scale(1);
         & button
         {
             border: none;
-            background: linear-gradient(0deg, #9356DC 5%, #FF79DA 90%);
+            background: linear-gradient(0deg, 5%,);
             border-radius: 40px;
             width: 100%;
             height: 100%;
@@ -92,10 +91,6 @@ body
         & p
         {
             color: #ffff;
-        }
-        & :hover
-        {
-            transform: scale(1.15);
         }
     }
 }
@@ -239,44 +234,6 @@ body
         
     }
     
-}
-
-.footer
-{
-    background-color: #353535;
-    color: #ffff;
-    padding: 10px;
-    line-height: 1.3em;
-    & a
-    {
-        text-decoration: none;
-        color: #ffff;
-    }
-    &__h
-    {
-        font-size: .8em;
-        font-weight: lighter;
-        font-family: "Shrikhand";
-        margin-left: 10px;
-    }
-    &__text
-    {
-        display: flex;
-        flex-direction: row;
-        margin: 10px 0px 10px 10px;
-        & i
-        {
-            width: 5%;
-        }
-    }
-    & p
-    {
-        margin-left: 10px;    
-    }
-    & a
-    {
-        margin-left: 10px;
-    }
 }
 
 
