@@ -1,0 +1,17 @@
+* {padding: 0; margin: 0;}
+
+
+body
+{
+    font-family: "Roboto", sans-sérif;
+}
+
+@import "./scss/utils/variables";
+@import "./scss/layouts/header";
+@import "./scss/layouts/vign";
+@import "./scss/layouts/footer";
+@import "./scss/layouts/btn";
+@import "./scss/pages/accueil";
+@import "./scss/pages/alafrancaise";
+
+
