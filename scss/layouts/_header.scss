@@ -1,21 +1,24 @@
 .header
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
     &__img
     {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         background-color: #ffff;
         box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
         & img
         {
             width: 50%;
-            margin: 10px 10px 12px 10px;
+            margin: 10px 10px 12px 40px;
+        }
+        & i
+        {
+            text-decoration: none;
+            color: black;
+            width: 20px;
+            height: 20px;
+            margin: 0px 20px 0px 20px;
         }
     }
     

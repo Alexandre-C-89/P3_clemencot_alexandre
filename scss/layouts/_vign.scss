@@ -5,19 +5,19 @@
         background-color: #ffff;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 10px 0px 10px 0px;
-        box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
         &__text
         {
             font-weight: bolder;
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 1.4rem;
-            margin: 7px;
+            margin: 7px 7px 7px 7px;
             #li
             {
-                font-size: .9rem;
+                font-size: .8rem;
                 font-weight: lighter;
             }
         }
@@ -25,6 +25,24 @@
         {
             width: 30px;
             height: 30px;
-            margin: 10px 10px 0px 0px;
+            margin: 30px 10px 0px 0px;
         }
-}
+        &__check
+        {
+            display: none;
+        }
+        &:active .vign__check
+        {
+            display: block;
+            width: 55px;
+            height: 60px;
+            border-radius:0px 10px 10px 0px;
+            margin: 0px;
+            color: #ffff;
+            background-color: $tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
