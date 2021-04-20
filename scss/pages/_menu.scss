@@ -37,31 +37,22 @@
     justify-content: flex-start;
 }
 
-.enter h2
+h2
 {
     text-transform: uppercase;
     font-size: medium;
     font-weight: lighter;
-    text-decoration: underline $tertiary;
-}
-
-.plats h2
-{
-    text-transform: uppercase;
-    font-size: medium;
-    font-weight: lighter;
-    text-decoration: underline $tertiary;
-}
-
-.desserts h2
-{
-    text-transform: uppercase;
-    font-size: medium;
-    font-weight: lighter;
-    text-decoration: underline $tertiary;
-}
-
-.btn
-{
-    margin: 40px 0px 40px 70px;
+    line-height: 1.4em;
+    &::before
+    {
+        content: "";
+    }
+    &::after
+    {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $tertiary;
+    }
 }
