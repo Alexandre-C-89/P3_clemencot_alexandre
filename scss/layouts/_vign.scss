@@ -15,12 +15,16 @@
             font-weight: bolder;
             font-size: 1rem;
             line-height: 1.4rem;
-            // margin: 7px 7px 7px 7px;
+            margin: 7px 7px 7px 7px;
             width: calc(100% - 30px);
             #li
             {
                 font-size: .8rem;
                 font-weight: lighter;
+            }
+            & p
+            {
+                text-overflow: ellipsis;
             }
         }
         &__price
@@ -45,6 +49,7 @@
         &:hover .vign__check
         {
             width: 55px;
+            transition-timing-function: cubic-bezier(.08,.32,.58,.98);
         }
         
     }
