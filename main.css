@@ -337,6 +337,164 @@ body {
   object-fit: cover;
 }
 
+@media all and (min-width: 700px) and (max-width: 900px) {
+  .filtres {
+    width: 100%;
+    height: 150px;
+  }
+  .filtres__list {
+    flex-direction: row;
+  }
+  .filtres__list__div {
+    justify-content: center;
+    align-content: center;
+  }
+  .filtres__list__div__nb {
+    margin-top: 10px;
+  }
+
+  .restau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restau__vign {
+    width: 300px;
+    height: 220px;
+    margin: 20px;
+  }
+  .restau h1 {
+    margin-left: 80px;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1100px) {
+  .headera {
+    justify-content: center;
+    align-content: center;
+  }
+  .headera__img {
+    justify-content: center;
+    align-items: center;
+  }
+  .bandeau {
+    width: 100%;
+    height: 300px;
+    background: #99e2d0;
+  }
+  .bandeau__research {
+    width: 40%;
+    height: 25px;
+    margin: 10px 10px 10px 30px;
+  }
+  .bandeau__text {
+    width: 40%;
+  }
+  .bandeau__text p {
+    margin: 10px;
+  }
+  .bandeau__btn {
+    margin: 10px;
+  }
+
+  .filtres {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .filtres__list {
+    flex-direction: row;
+  }
+  .filtres__list__div {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .restau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restau__vign {
+    width: 100%;
+    margin: 20px;
+  }
+  .restau a {
+    width: 40%;
+    margin: 10px;
+  }
+  .restau h1 {
+    margin-left: 120px;
+  }
+}
+@media all and (min-width: 1101px) {
+  .headera {
+    justify-content: center;
+    align-content: center;
+  }
+  .headera__img {
+    justify-content: center;
+    align-items: center;
+  }
+  .bandeau {
+    width: 100%;
+    height: 300px;
+    background: #99e2d0;
+  }
+  .bandeau__research {
+    width: 40%;
+    height: 25px;
+    margin: 10px 10px 10px 30px;
+  }
+  .bandeau__text {
+    width: 40%;
+  }
+  .bandeau__text p {
+    margin: 10px;
+  }
+  .bandeau__btn {
+    margin: 10px;
+  }
+
+  .filtres {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .filtres__list {
+    flex-direction: row;
+  }
+  .filtres__list__div {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .restau {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restau__vign {
+    width: 100%;
+    margin: 20px;
+  }
+  .restau a {
+    width: 30%;
+    margin: 10px;
+  }
+  .restau h1 {
+    margin-left: 60px;
+  }
+}
 .img {
   width: 100%;
 }
