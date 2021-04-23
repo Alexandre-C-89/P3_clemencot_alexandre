@@ -57,3 +57,81 @@ h2
         background-color: $tertiary;
     }
 }
+
+@media all and (min-width: 700px) and (max-width: 900px)
+{
+    .header
+    {
+        &__img
+        {
+            justify-content: flex-start;
+            align-content: space-around;
+            & a
+            {
+                width: 20%;
+                margin: 10px 30px 10px 30px;
+            }
+        }
+    }
+
+    .btn
+    {
+        width: 70%;
+        & button
+        {
+            width: 50%;
+        }
+    }
+}
+
+@media all and (min-width: 901px) and (max-width: 1100px)
+{
+    .header
+    {
+        &__img
+        {
+            justify-content: flex-start;
+            align-content: space-around;
+            & a
+            {
+                width: 20%;
+                margin: 10px 30px 10px 20px;
+            }
+        }
+    }
+
+    .btn
+    {
+        width: 80%;
+        & button
+        {
+            width: 30%;
+        }
+    }
+}
+
+@media all and (min-width: 1101px)
+{
+    .header
+    {
+        &__img
+        {
+            justify-content: flex-start;
+            align-content: space-around;
+            & a
+            {
+                width: 20%;
+                margin: 10px 30px 10px 20px;
+            }
+        }
+    }
+    
+    .btn
+    {
+        width: 90%;
+        & button
+        {
+            width: 20%;
+        }
+    }
+}
