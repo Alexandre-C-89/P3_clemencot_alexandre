@@ -1,3 +1,8 @@
+.body
+{
+    animation: load 4000ms ease-in-out;
+}
+
 .headera
 {
     &__img
@@ -445,5 +450,19 @@
         {
             margin-left: 60px;
         }
+    }
+}
+
+@keyframes load
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(-2000px);
+    }
+    to
+    {
+        opcity: 1;
+        transform: translateY(0px);
     }
 }

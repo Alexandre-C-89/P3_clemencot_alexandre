@@ -35,17 +35,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    animation: menu 400ms 2000ms;
+    animation: menu 4000ms 0ms;
 }
 
 .plats
 {
-    animation: menu 400ms 2000ms;
+    animation: menu 5000ms 1000ms;
 }
 
 .desserts
 {
-    animation: menu 400ms 2000ms;
+    animation: menu 6000ms 2000ms;
 }
 
 h2
@@ -148,12 +148,14 @@ h2
 
 @keyframes menu
 {
-    0%
+    from 
     {
-        transform: scaleY(1000px);
+        opacity: 0;
+        transform: translateY(-2000px);
     }
-    100% 
+    to
     {
-        transform: scaleY(0);
+        opcity: 1;
+        transform: translateY(0px);
     }
 }
