@@ -27,7 +27,6 @@
     &__heart
     {
         margin-right: 20px;
-
     }
 }
 
@@ -36,6 +35,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    animation: menu 400ms 2000ms;
+}
+
+.plats
+{
+    animation: menu 400ms 2000ms;
+}
+
+.desserts
+{
+    animation: menu 400ms 2000ms;
 }
 
 h2
@@ -133,5 +143,17 @@ h2
         {
             width: 20%;
         }
+    }
+}
+
+@keyframes menu
+{
+    0%
+    {
+        transform: scaleY(1000px);
+    }
+    100% 
+    {
+        transform: scaleY(0);
     }
 }
