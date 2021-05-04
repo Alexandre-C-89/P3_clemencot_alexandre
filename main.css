@@ -341,6 +341,10 @@ body {
   height: 350px;
 }
 
+.filtres h3 {
+  margin-left: 20px;
+}
+
 .filtres__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,12 +400,16 @@ body {
   border-radius: 15px;
   z-index: -1;
   opacity: 0;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
 }
 
 .filtres__list__div i {
   margin: 0px 30px 0px 0px;
+}
+
+.filtres__list__div i:hover {
+  color: #9356dc;
 }
 
 .filtres__list__div__nb {
@@ -431,9 +439,9 @@ body {
   color: black;
 }
 
-.restau h1 {
+.restau h3 {
   width: 100%;
-  margin: 10px 0px 0px 10px;
+  margin: 20px 0px 20px 10px;
 }
 
 .restau__vign {
@@ -562,8 +570,8 @@ body {
     height: 220px;
     margin: 20px;
   }
-  .restau h1 {
-    margin-left: 80px;
+  .restau h3 {
+    margin-left: 12%;
   }
 }
 
@@ -652,8 +660,8 @@ body {
     width: 40%;
     margin: 10px;
   }
-  .restau h1 {
-    margin-left: 120px;
+  .restau h3 {
+    margin-left: 12%;
   }
 }
 
@@ -742,8 +750,8 @@ body {
     width: 30%;
     margin: 10px;
   }
-  .restau h1 {
-    margin-left: 60px;
+  .restau h3 {
+    margin-left: 5%;
   }
 }
 
@@ -848,7 +856,7 @@ h2::before {
 h2::after {
   content: "";
   display: block;
-  width: 30px;
+  width: 40px;
   height: 2px;
   background-color: #99e2d0;
 }

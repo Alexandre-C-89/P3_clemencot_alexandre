@@ -97,67 +97,75 @@
     flex-direction: column;
     margin: 10px 0px 20px 10px;
     height: 350px;
-            &__list
+    & h3
+    {
+        margin-left: 20px;
+    }
+    &__list
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 10px 0px 10px;
+        & li
+        {
+            list-style: none;
+            margin: 20px 20px 20px 20px;
+        }
+        &__div
+        {
+            display: flex;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 4px 3px 4px 0px rgba(0,0,0,0.45);
+            border-radius: 15px;
+            background-color: #f6f6f6;
+            position: relative;
+            z-index: 1;
+            &:hover
             {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 0px 10px 0px 10px;
-                & li
+                &::after
                 {
-                    list-style: none;
-                    margin: 20px 20px 20px 20px;
-                }
-                &__div
-                {
-                    display: flex;
-                    align-items: center;
-                    display: flex;
-                    flex-direction: row;
-                    padding: 20px 20px 20px 20px;
-                    box-shadow: 4px 3px 4px 0px rgba(0,0,0,0.45);
-                    border-radius: 15px;
-                    background-color: #f6f6f6;
-                    position: relative;
-                    z-index: 1;
-                    &:hover
-                    {
-                        &::after
-                        {
-                            opacity: 0.2;
-                        }
-                    }
-                    &::after
-                    {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        left: 0;
-                        bottom: 0;
-                        background-color: darken($primary, 5);
-                        border-radius: 15px;
-                        z-index: -1;
-                        opacity: 0;
-                        transition: opacity 250ms;
-                    }
-                    & i
-                    {
-                        margin: 0px 30px 0px 0px;
-                    }
-                    &__nb
-                    {
-                        position: absolute;
-                        top: 20px; left: -8px;
-                        width: 20px;
-                        height: 20px;
-                        text-align: center;
-                        color: #ffff;
-                        background: $primary;
-                        border-radius: 100px;
-                    }
+                    opacity: 0.2;
                 }
             }
+            &::after
+            {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: darken($primary, 5);
+                border-radius: 15px;
+                z-index: -1;
+                opacity: 0;
+                transition: opacity 1000ms;
+            }
+            & i
+            {
+                margin: 0px 30px 0px 0px;
+                &:hover
+                {
+                    color: $primary;
+                }
+            }
+            &__nb
+            {
+                position: absolute;
+                top: 20px; left: -8px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                color: #ffff;
+                background: $primary;
+                border-radius: 100px;
+            }
+        }
+    }
 }
 
 .backa
@@ -175,10 +183,10 @@
         text-decoration: none;
         color: black;
     }
-    & h1
+    & h3
     {
         width: 100%;
-        margin: 10px 0px 0px 10px;
+        margin: 20px 0px 20px 10px;
     }
     &__vign
     {
@@ -283,9 +291,9 @@
                 height: 220px;
                 margin: 20px;
             }
-            & h1
+            & h3
             {
-                margin-left: 80px;
+                margin-left: 12%;
             }
     }
 }
@@ -365,9 +373,9 @@
             margin: 10px;
 
         }
-        & h1
+        & h3
         {
-            margin-left: 120px;
+            margin-left: 12%;
         }
     }
 }
@@ -446,9 +454,9 @@
             margin: 10px;
 
         }
-        & h1
+        & h3
         {
-            margin-left: 60px;
+            margin-left: 5%;
         }
     }
 }
