@@ -19,6 +19,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffff;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .header__img img {
@@ -601,7 +603,8 @@ body {
 }
 
 .restau__vign__bvign__heart i:hover {
-  background: 0deg, #9356DC 5%, #FF79DA 90%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356DC), color-stop(90%, #FF79DA));
+  background: linear-gradient(0deg, #9356DC 5%, #FF79DA 90%);
   background-clip: text;
   color: transparent;
   font-weight: bold;
