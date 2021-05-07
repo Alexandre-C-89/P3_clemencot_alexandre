@@ -68,19 +68,20 @@
 //     }
 // }
 
-// .headera
-// {
-//     &__img
-//     {
-//         display: flex;
-//         justify-content: center;
-//         & img
-//         {
-//             width: 50%;
-//             margin: 10px;
-//         }
-//     }  
-// }
+.headera
+{
+    box-shadow: 200px 1200px 100px 200px rgba(0,0,0,0.75);
+    &__img
+    {
+        display: flex;
+        justify-content: center;
+        & img
+        {
+            width: 40%;
+            margin: 10px;
+        }
+    }
+}
 
 .bandeau
 {
@@ -186,13 +187,15 @@
             background-color: #f6f6f6;
             position: relative;
             z-index: 1;
-
             &:hover
             {
-                color: $primary;
                 &::after
                 {
                     opacity: 0.2;
+                }
+                & i
+                {
+                    color: $primary;
                 }
             }
             &::after
@@ -212,10 +215,6 @@
             & i
             {
                 margin: 0px 30px 0px 0px;
-                &:hover
-                {
-                    color: $primary;
-                }
             }
             &__nb
             {
@@ -294,8 +293,7 @@
                 transition: transform 400ms;
                 & i
                 {
-                    width: 30px;
-                    height: 30px;
+                    font-size: x-large;
                     &:hover
                     {
                         width: 40px;
@@ -340,7 +338,7 @@
             & img
             {
                 width: 40%;
-                margin: 5px;
+                margin: 10px;
             }
         }
     }
@@ -390,7 +388,7 @@
             }
             & h3
             {
-                margin-left: 50px;
+                margin-left: 190px;
             }
     }
 }
@@ -409,7 +407,7 @@
             & img
             {
                 width: 20%;
-                margin: 5px;
+                margin: 10px;
             }
         }
     }
@@ -500,8 +498,8 @@
             align-items: center;
             & img
             {
-                width: 30%;
-                margin: 5px;                
+                width: 40%;
+                margin: 10px;                
             }
         }
     }
@@ -568,12 +566,12 @@
         }
         & a
         {
-            width: 40%;
+            width: 45%;
             margin: 5px 10px 5px 10px;
         }
         & h3
         {
-            margin: 10px 10px 10px 120px;
+            margin: 10px 10px 10px 50px;
         }
     }
 }

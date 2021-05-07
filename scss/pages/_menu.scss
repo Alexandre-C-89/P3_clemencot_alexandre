@@ -26,7 +26,23 @@
     margin-bottom: 20px;
     &__heart
     {
-        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+        transition: transform 400ms;
+        & i
+        {
+            font-size: x-large;
+            &:hover
+            {
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(0deg, #9356DC 5%, #FF79DA 90%);
+                background-clip:text;
+                color:transparent;
+                font-weight: bold;
+                transform: scale(1.4);
+            }
+        }
     }
 }
 
@@ -76,6 +92,11 @@ h2
         {
             justify-content: flex-start;
             align-content: space-around;
+            & img
+            {
+                width: 20%;
+                margin-left: 80px;
+            }
             & a
             {
                 width: 20%;
@@ -122,18 +143,38 @@ h2
 
 @media all and (min-width: 1101px)
 {
+    .img
+    {
+        & img
+        {
+            height: 500px;
+        }
+    }
+    
     .header
     {
         &__img
         {
             justify-content: flex-start;
             align-content: space-around;
+            & img
+            {
+                width: 20%;
+                margin: 10px 10px 10px 200px;
+            }
             & a
             {
                 width: 20%;
                 margin: 10px 30px 10px 20px;
             }
         }
+    }
+    
+    .back
+    {
+        width: 60%;
+        margin: -160px 30px 10px 170px;
+        padding: 20px 80px 20px 80px;
     }
     
     .btn
