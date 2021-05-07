@@ -76,8 +76,12 @@
         height: 80px;
         &__text
         {
-            width: calc(100% - 50px);
+            width: calc(100% - 60px);
             margin-left: 10px;
+        }
+        &__price
+        {
+            margin: 30px 20px 0px 0px;
         }
         & p
         {
