@@ -99,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 40px 20px 40px 60px;
+  margin: 40px 20px 40px 90px;
 }
 .btn button {
   border: none;
@@ -148,7 +148,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #ffff;
-  animation: loader 8s forwards;
+  animation: loader 5s forwards;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -160,7 +160,7 @@ body {
   height: 200px;
   background-color: #9356dc;
   border-radius: 50%;
-  animation: spinner 5s forwards;
+  animation: spinner 3s forwards;
 }
 
 @keyframes loader {
