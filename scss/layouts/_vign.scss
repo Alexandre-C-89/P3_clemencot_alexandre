@@ -1,69 +1,69 @@
 .vign
 {
-        width: 100%;
-        height: 60px;
-        border-radius: 10px;
-        background-color: #ffff;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px 0px 10px 0px;
-        box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
-        overflow: hidden;
-        &:hover .vign__text
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    overflow: hidden;
+    &:hover .vign__text
+    {
+        width: calc(100% - 85px);
+    }
+    &__text
+    {
+        font-weight: bolder;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding-left: 7px;
+        width: calc(100% - 30px);
+        transition: all .8s ease-in;
+        flex: none;
+        box-sizing: border-box;
+        #li
         {
-            width: calc(100% - 85px);
+            font-size: .8rem;
+            font-weight: lighter;
         }
-        &__text
+        & p
         {
-            font-weight: bolder;
-            font-size: 1rem;
-            line-height: 1.4rem;
-            padding-left: 7px;
-            width: calc(100% - 30px);
-            transition: all .8s ease-in;
-            flex: none;
-            box-sizing: border-box;
-            #li
-            {
-                font-size: .8rem;
-                font-weight: lighter;
-            }
-            & p
-            {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-        }
-        &__price
-        {
-            width: 30px;
-            height: 30px;
-            margin: 30px 10px 0px 0px;
-            flex: none;
-        }
-        &__check
-        {
-            width: 0px;
-            height: 60px;
-            transition: all .8s ease-in;
-            border-radius:0px 10px 10px 0px;
-            margin: 0px;
-            color: #ffff;
-            background-color: $tertiary;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &:hover .vign__check
-        {
-            width: 55px;
-            transition-timing-function: cubic-bezier(.08,.32,.58,.98);
-            i
-            {
-                transform: rotate(1turn);
-                transition: transform 900ms ease-in-out;
-            }
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
+    &__price
+    {
+        width: 30px;
+        height: 30px;
+        margin: 30px 10px 0px 0px;
+        flex: none;
+    }
+    &__check
+    {
+        width: 0px;
+        height: 60px;
+        transition: all .8s ease-in;
+        border-radius:0px 10px 10px 0px;
+        margin: 0px;
+        color: #ffff;
+        background-color: $tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover .vign__check
+    {
+        width: 55px;
+        transition-timing-function: cubic-bezier(.08,.32,.58,.98);
+        i
+        {
+            transform: rotate(1turn);
+            transition: transform 900ms ease-in-out;
+        }
+    }
+}
