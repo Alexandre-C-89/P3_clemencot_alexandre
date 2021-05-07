@@ -393,7 +393,7 @@ body {
   display: flex;
 }
 .restau__vign__bvign__heart i:hover {
-  background: 0deg, #9356DC 5%, #FF79DA 90%;
+  background: linear-gradient(0deg, #9356DC 5%, #FF79DA 90%);
   background-clip: text;
   color: transparent;
   font-weight: bold;
