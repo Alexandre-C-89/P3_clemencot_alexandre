@@ -1,72 +1,72 @@
-.loader
-{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffff;
-    animation: loader 5s forwards;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    &__spinner
-    {
-    width: 200px;
-    height: 200px;
-    background-color: $primary;
-    border-radius: 50%;
-    animation: spinner 3s forwards;
-    }
-}
+// .loader
+// {
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: #ffff;
+//     animation: loader 5s forwards;
+//     z-index: 10;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     &__spinner
+//     {
+//     width: 200px;
+//     height: 200px;
+//     background-color: $primary;
+//     border-radius: 50%;
+//     animation: spinner 3s forwards;
+//     }
+// }
 
-@keyframes loader
-{
-    90%
-    {
-    opacity: 1;
-    }
-    100%
-    {
-    opacity: 0;
-    visibility: hidden;
-    }
-}
+// @keyframes loader
+// {
+//     90%
+//     {
+//     opacity: 1;
+//     }
+//     100%
+//     {
+//     opacity: 0;
+//     visibility: hidden;
+//     }
+// }
 
-@keyframes spinner 
-{
-    0%
-    {
-        opacity: 0;
-    }
-    15%
-    {
-        background-color: $tertiary;
-    }
-    30%
-    {
-        background-color: $primary;
-    }
-    45%
-    {
-        background-color: $tertiary;
-    }
-    60%
-    {
-        background-color: $primary;
-    }
-    75%
-    {
-        background-color: $tertiary;
-    }
-    90%
-    {
-        background-color: $tertiary;
-    }
-    100%
-    {
-        opacity: 1;
-    }
-}
+// @keyframes spinner 
+// {
+//     0%
+//     {
+//         opacity: 0;
+//     }
+//     15%
+//     {
+//         background-color: $tertiary;
+//     }
+//     30%
+//     {
+//         background-color: $primary;
+//     }
+//     45%
+//     {
+//         background-color: $tertiary;
+//     }
+//     60%
+//     {
+//         background-color: $primary;
+//     }
+//     75%
+//     {
+//         background-color: $tertiary;
+//     }
+//     90%
+//     {
+//         background-color: $tertiary;
+//     }
+//     100%
+//     {
+//         opacity: 1;
+//     }
+// }
 
 .headera
 {
