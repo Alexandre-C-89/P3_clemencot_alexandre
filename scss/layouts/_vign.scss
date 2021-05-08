@@ -72,7 +72,6 @@
 {
     .vign
     {
-        width: 100%;
         height: 80px;
         &__text
         {
@@ -90,6 +89,7 @@
         &:hover .vign__check
         {
             height: 80px;
+            width: 100px;
         }
     }
 }
