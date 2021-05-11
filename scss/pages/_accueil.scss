@@ -1,21 +1,86 @@
-.loader
+.container
 {
     width: 100vw;
     height: 100vh;
     background-color: #ffff;
-    animation: loader 5s forwards;
+    animation: loader 3s forwards;
     z-index: 10;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    &__spinner
+    &__loader
     {
-    width: 200px;
-    height: 200px;
-    background-color: $primary;
-    border-radius: 50%;
-    animation: spinner 3s forwards;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        animation: progress-bar 3s forwards;
+        &__grp1
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__line1
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+            &__line2
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+            &__line3
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+        }
+        &__grp2
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__line4
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+            &__line5
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+            &__line6
+            {
+                width: 100px;
+                height: 10px;
+                border:solid rgb(197, 197, 197);
+                background-color: $primary;
+                margin: 2px;
+            }
+        }
     }
 }
 
@@ -32,41 +97,18 @@
     }
 }
 
-@keyframes spinner 
+@keyframes progress-bar 
 {
     0%
     {
-        opacity: 0;
-    }
-    15%
-    {
-        background-color: $tertiary;
-    }
-    30%
-    {
-        background-color: $primary;
-    }
-    45%
-    {
-        background-color: $tertiary;
-    }
-    60%
-    {
-        background-color: $primary;
-    }
-    75%
-    {
-        background-color: $tertiary;
-    }
-    90%
-    {
-        background-color: $tertiary;
+        transform: scaleX(0);
     }
     100%
     {
-        opacity: 1;
+        transform: scaleX(1);
     }
 }
+
 
 .headera
 {

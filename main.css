@@ -199,23 +199,80 @@ body {
     width: 2%;
   }
 }
-.loader {
+.container {
   width: 100vw;
   height: 100vh;
   background-color: #ffff;
-  animation: loader 5s forwards;
+  animation: loader 3s forwards;
   z-index: 10;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
 }
-.loader__spinner {
-  width: 200px;
-  height: 200px;
+.container__loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: progress-bar 3s forwards;
+}
+.container__loader__grp1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__loader__grp1__line1 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
   background-color: #9356dc;
-  border-radius: 50%;
-  animation: spinner 3s forwards;
+  margin: 2px;
+}
+.container__loader__grp1__line2 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
+  background-color: #9356dc;
+  margin: 2px;
+}
+.container__loader__grp1__line3 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
+  background-color: #9356dc;
+  margin: 2px;
+}
+.container__loader__grp2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__loader__grp2__line4 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
+  background-color: #9356dc;
+  margin: 2px;
+}
+.container__loader__grp2__line5 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
+  background-color: #9356dc;
+  margin: 2px;
+}
+.container__loader__grp2__line6 {
+  width: 100px;
+  height: 10px;
+  border: solid #c5c5c5;
+  background-color: #9356dc;
+  margin: 2px;
 }
 
 @keyframes loader {
@@ -227,30 +284,12 @@ body {
     visibility: hidden;
   }
 }
-@keyframes spinner {
+@keyframes progress-bar {
   0% {
-    opacity: 0;
-  }
-  15% {
-    background-color: #99e2d0;
-  }
-  30% {
-    background-color: #9356dc;
-  }
-  45% {
-    background-color: #99e2d0;
-  }
-  60% {
-    background-color: #9356dc;
-  }
-  75% {
-    background-color: #99e2d0;
-  }
-  90% {
-    background-color: #99e2d0;
+    transform: scaleX(0);
   }
   100% {
-    opacity: 1;
+    transform: scaleX(1);
   }
 }
 .headera {
