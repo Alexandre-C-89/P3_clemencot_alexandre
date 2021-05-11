@@ -388,6 +388,8 @@ body {
   position: relative;
   background-color: #f6f6f6;
   padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .restau {
@@ -783,7 +785,7 @@ h2::after {
 
   .back {
     width: 60%;
-    margin: -160px 30px 10px 170px;
+    margin: -160px 30px 10px 200px;
     padding: 20px 80px 20px 80px;
   }
 
