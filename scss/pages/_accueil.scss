@@ -15,71 +15,16 @@
         width: 100vw;
         height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        animation: progress-bar 3s forwards;
-        &__grp1
+        &__line1
         {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &__line1
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
-            &__line2
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
-            &__line3
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
-        }
-        &__grp2
-        {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &__line4
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
-            &__line5
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
-            &__line6
-            {
-                width: 100px;
-                height: 10px;
-                border:solid rgb(197, 197, 197);
-                background-color: $primary;
-                margin: 2px;
-            }
+            width: 200px;
+            height: 10px;
+            animation: progress-bar 3s forwards;
+            background-color: $primary;
+            margin: 2px;
         }
     }
 }
@@ -278,8 +223,6 @@
     position: relative;
     background-color: #f6f6f6;
     padding: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: center;
 }
 
 .restau
