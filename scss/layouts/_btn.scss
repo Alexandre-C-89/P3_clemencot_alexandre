@@ -7,7 +7,7 @@
         justify-content: center;
         align-items: center;
         color: white;
-        margin: 40px 20px 40px 90px;
+        margin: 40px 20px 40px 50px;
         & button
         {
             border: none;
@@ -21,6 +21,16 @@
             color: #ffff;
         }
     }
+
+@media all and (min-width: 700px) and (max-width: 900px)
+{
+    .btn
+    {
+        margin: 40px 20px 40px 90px;
+    }
+}
+
+
 
 @media all and (min-width: 1100px)
 {
