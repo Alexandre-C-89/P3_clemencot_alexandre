@@ -473,7 +473,7 @@ body {
     margin: 20px;
   }
   .restau h3 {
-    margin-left: 190px;
+    margin-left: 42px;
   }
 }
 @media all and (min-width: 901px) and (max-width: 1100px) {
@@ -611,7 +611,7 @@ body {
     margin: 5px 10px 5px 10px;
   }
   .restau h3 {
-    margin: 10px 10px 10px 50px;
+    margin: 10px 10px 10px 60px;
   }
 }
 .img {
@@ -627,7 +627,7 @@ body {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
   padding: 20px 40px 20px 40px;
-  margin-top: -120px;
+  margin-top: -80px;
 }
 
 .title {
