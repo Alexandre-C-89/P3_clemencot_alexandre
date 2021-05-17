@@ -204,6 +204,51 @@ body {
     width: 2%;
   }
 }
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffff;
+  animation: loader 3s forwards;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.container__loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__loader__line1 {
+  width: 200px;
+  height: 10px;
+  animation: progress-bar 3s forwards;
+  background-color: #9356dc;
+  margin: 2px;
+}
+
+@keyframes loader {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .headera {
   box-shadow: 200px 1200px 100px 200px rgba(0, 0, 0, 0.75);
 }
