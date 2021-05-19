@@ -1040,7 +1040,7 @@ body {
   height: 40px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #9356DC), color-stop(90%, #FF79DA));
   background: linear-gradient(0deg, #9356DC 5%, #FF79DA 90%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
   -webkit-transform: scale(1.4);
@@ -1187,7 +1187,7 @@ h2::after {
             transform: translateY(-2000px);
   }
   to {
-    opcity: 1;
+    opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
